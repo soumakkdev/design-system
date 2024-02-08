@@ -18,11 +18,16 @@ export const Playground: Story = {
 	args: {
 		children: 'Hello',
 		variant: 'secondary',
+		loading: false,
 	},
 	argTypes: {
 		variant: {
 			control: 'select',
 			options: ['default', 'secondary', 'ghost', 'outline'],
+		},
+		size: {
+			control: 'radio',
+			options: ['default', 'sm', 'lg'],
 		},
 	},
 }
